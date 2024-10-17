@@ -5,4 +5,5 @@ Scenario: soma
     When digitar o numero 4 na primeira caixa
     And digitar 6 na segunda caixa
     And clicar no botão Calcular
-    Then deve mostrar que o resultado é 10
+    Then deve mostrar que o resultado é 10clear
+    
