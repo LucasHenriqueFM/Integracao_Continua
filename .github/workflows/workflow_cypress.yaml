@@ -1,6 +1,6 @@
 name: Continuous Integration
 
-on: [push, pull_request]
+on: push
 
 jobs:
   Continuous-integration:
@@ -14,16 +14,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Cache Cypress
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/Cypress
-          key: ${{ runner.os }}-cypress-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-cypress-
-
       - name: Install dependencies
         run: npm install
+
+      - name: Set permissions for Cypress
+        run: chmod +x ./node_modules/.bin/cypress || true
 
       - name: Install Cypress binary
         run: npx cypress install
