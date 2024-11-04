@@ -12,10 +12,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20.
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
+
+      - name: Install Cypress binary
+        run: npx cypress install
 
       - name: Set permissions for Cypress
         run: chmod +x ./node_modules/.bin/cypress
