@@ -4,3 +4,5 @@ alteração
 alteração dnv ahusahasuh
 
 teste novo CI/CD
+
+Validação de arquivos separados, esse arquivo é projeto leme
