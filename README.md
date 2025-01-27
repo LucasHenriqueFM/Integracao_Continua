@@ -16,6 +16,9 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
 - Dentro do Projeto no GitHub, clicar em Branches e depois New branch, digitar o nome da branch, e clicar em create new branch
   ![alt text](image.png)
   ![alt text](image-1.png)
+- No Terminal digitar o comando `git checkout homologa`
+- Comando para saber em qual branch você está `git branch`
+
 
 #### 3.2 Criar um Pull Request (PR)
 - Quando você fizer alterações no código e quiser testá-las, crie uma nova branch e um Pull Request (PR) no GitHub.
