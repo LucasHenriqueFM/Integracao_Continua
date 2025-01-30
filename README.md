@@ -41,8 +41,8 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
 - Commit e push da nova branch
 - Comandos:
   ```
-  git checkout -b nome-da-branch
-  git add .
-  git commit -m "Descrição"
-  git push origin nome-da-branch
+  git checkout -b nome-da-branch (mudar a branch)
+  git add . (adicionar alteração)
+  git commit -m "Descrição" (fazer comentário)
+  git push origin nome-da-branch (subir atualização para a branch)
   ```
