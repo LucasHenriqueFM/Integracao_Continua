@@ -46,3 +46,5 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
   git commit -m "Descrição" (fazer comentário)
   git push origin nome-da-branch (subir atualização para a branch)
   ```
+
+  ### 4. apenas para testar o push na master
