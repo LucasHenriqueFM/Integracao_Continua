@@ -10,11 +10,26 @@ A integração contínua é uma prática fundamental no desenvolvimento de softw
 
 Esse processo de integração contínua garante que a equipe de desenvolvimento tenha mais confiança nas mudanças feitas no código, contribuindo para um fluxo de trabalho mais ágil e produtivo.
 
+### 3. Como executar a automação da Integração Contínua
+
+#### 3.1 Criar uma Branch nova
+- Dentro do Projeto no GitHub, clicar em Branches e depois New branch, digitar o nome da branch, e clicar em create new branch
+  ![alt text](image.png)
+  ![alt text](image-1.png)
+- No Terminal digitar o comando `git checkout homologa`
+- Comando para saber em qual branch você está `git branch`
+
+
+#### 3.2 Criar um Pull Request (PR)
+- Quando você fizer alterações no código e quiser testá-las, crie uma nova branch e um Pull Request (PR) no GitHub.
+- O workflow de integração contínua será automaticamente acionado ao abrir o PR, e os testes serão executados conforme configurado.
+
 
 ### 1. Criar um Pull Request
 - Acesse o repositório no GitHub
 - Clique em **Compare & Pull Request**
 - Descreva as alterações
+
 
 ### 2. Configuração do Workflow
 - Arquivo de workflow: `.github/workflows/[nome-do-arquivo].yml`
