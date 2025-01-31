@@ -32,11 +32,17 @@ Primeiro passo que deve ser feito, é clonar o repositório do GitHub para a sua
 #### 3.2 Realizar alteração em algum arquivo
 Após ter clonado o repositório do git, o próximo passo é fazer alguma ateração em qualquer arquivo.
 
-#### 3.3 Executar um push
+#### 3.3 Subir a alteração para branch homologa
 Após realizar a alteração, deve subir a alteração para a branch homologa
-- 
 
+- Adicione o(s) arquivo(s) alterado(s) para o stage com o comando `git add nome_do_arquivo` para o arquivo especifico ou `git add .` para enviar todos os arquivos
+![alt text](image-6.png)
 
+- Faça o commit das alterações com uma mensagem descritiva com o comando `git commit -m "Descrição da alteração realizada"`
+![alt text](image-7.png)
+
+- Envie as alterações da branch homologa para o repositório remoto com o comando `git push origin homologa`
+![alt text](image-8.png)
 
 
 
