@@ -12,23 +12,38 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
 
 ### 3. Como executar a automação da Integração Contínua
 
-#### 3.1 Criar uma Branch nova
-- Dentro do Projeto no GitHub, clicar em Branches e depois New branch, digitar o nome da branch, e clicar em create new branch
-  ![alt text](image.png)
-  ![alt text](image-1.png)
-- No Terminal digitar o comando `git checkout homologa`
-- Comando para saber em qual branch você está `git branch`
+#### 3.1 Clonar o repositório da branch "homologa"
+Primeiro passo que deve ser feito, é clonar o repositório do GitHub para a sua máquina.
 
+- Abrir o terminal onde deseja criar o repositório
+![alt text](image-2.png)
 
-#### 3.2 Criar um Pull Request (PR)
-- Quando você fizer alterações no código e quiser testá-las, crie uma nova branch e um Pull Request (PR) no GitHub.
-- O workflow de integração contínua será automaticamente acionado ao abrir o PR, e os testes serão executados conforme configurado.
+- Digitar o comando `git clone https://github.com/LucasHenriqueFM/Integracao_Continua.git` para criar o repositório
 
+- Digitar o comando `cd Integracao_Continua` para entrar dentro da pasta do projeto
+![alt text](image-3.png)
 
-### 1. Criar um Pull Request
-- Acesse o repositório no GitHub
-- Clique em **Compare & Pull Request**
-- Descreva as alterações
+- Digitar o comando `git checkout homologa` para mudar a branch da master para homologa
+![alt text](image-4.png)
+
+- Verificar em qual branch você está, com o comando `git branch`
+![alt text](image-5.png)
+
+#### 3.2 Realizar alteração em algum arquivo
+Após ter clonado o repositório do git, o próximo passo é fazer alguma ateração em qualquer arquivo.
+
+#### 3.3 Subir a alteração para branch homologa
+Após realizar a alteração, deve subir a alteração para a branch homologa
+
+- Adicione o(s) arquivo(s) alterado(s) para o stage com o comando `git add nome_do_arquivo` para o arquivo especifico ou `git add .` para enviar todos os arquivos
+![alt text](image-6.png)
+
+- Faça o commit das alterações com uma mensagem descritiva com o comando `git commit -m "Descrição da alteração realizada"`
+![alt text](image-7.png)
+
+- Envie as alterações da branch homologa para o repositório remoto com o comando `git push origin homologa`
+![alt text](image-8.png)
+
 
 
 ### 2. Configuração do Workflow
@@ -48,3 +63,24 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
   ```
 
   ### 4. apenas para testar o push na master
+
+
+  teste
+  teste
+  teste
+  teste
+
+  teste
+  teste
+
+
+
+  teste
+  teste
+  teste
+
+
+  asdasdsadasdasdasd
+  asdasdadasdasdasdasdsad
+  asdadasdasd
+  
