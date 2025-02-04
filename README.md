@@ -16,18 +16,18 @@ Esse processo de integração contínua garante que a equipe de desenvolvimento 
 Primeiro passo que deve ser feito, é clonar o repositório do GitHub para a sua máquina.
 
 - Abrir o terminal onde deseja criar o repositório
-![alt text](image-2.png)
+![alt text](image_readme/image-2.png)
 
 - Digitar o comando `git clone https://github.com/LucasHenriqueFM/Integracao_Continua.git` para criar o repositório
 
 - Digitar o comando `cd Integracao_Continua` para entrar dentro da pasta do projeto
-![alt text](image-3.png)
+![alt text](image_readme/image-3.png)
 
 - Digitar o comando `git checkout homologa` para mudar a branch da master para homologa
-![alt text](image-4.png)
+![alt text](image_readme/image-4.png)
 
 - Verificar em qual branch você está, com o comando `git branch`
-![alt text](image-5.png)
+![alt text](image_readme/image-5.png)
 
 #### 3.2 Realizar alteração em algum arquivo
 Após ter clonado o repositório do git, o próximo passo é fazer alguma ateração em qualquer arquivo.
@@ -36,13 +36,13 @@ Após ter clonado o repositório do git, o próximo passo é fazer alguma atera�
 Após realizar a alteração, deve subir a alteração para a branch homologa
 
 - Adicione o(s) arquivo(s) alterado(s) para o stage com o comando `git add nome_do_arquivo` para o arquivo especifico ou `git add .` para enviar todos os arquivos
-![alt text](image-6.png)
+![alt text](image_readme/image-6.png)
 
 - Faça o commit das alterações com uma mensagem descritiva com o comando `git commit -m "Descrição da alteração realizada"`
-![alt text](image-7.png)
+![alt text](image_readme/image-7.png)
 
 - Envie as alterações da branch homologa para o repositório remoto com o comando `git push origin homologa`
-![alt text](image-8.png)
+![alt text](image_readme/image-8.png)
 
 
 
@@ -50,6 +50,8 @@ Após realizar a alteração, deve subir a alteração para a branch homologa
 - Arquivo de workflow: `.github/workflows/[nome-do-arquivo].yml`
 - Instalar dependências
 - Executar testes automatizados
+<<<<<<< HEAD
+=======
 
 ### 3. Comandos para Subir a Nova Versão para o Git
 - Criar uma nova branch
@@ -84,3 +86,4 @@ Após realizar a alteração, deve subir a alteração para a branch homologa
   asdasdadasdasdasdasdsad
   asdadasdasd
   
+>>>>>>> 44676572520f201608b269ef4bb374b0252eb6a1
