@@ -50,3 +50,40 @@ Após realizar a alteração, deve subir a alteração para a branch homologa
 - Arquivo de workflow: `.github/workflows/[nome-do-arquivo].yml`
 - Instalar dependências
 - Executar testes automatizados
+<<<<<<< HEAD
+=======
+
+### 3. Comandos para Subir a Nova Versão para o Git
+- Criar uma nova branch
+- Commit e push da nova branch
+- Comandos:
+  ```
+  git checkout -b nome-da-branch (mudar a branch)
+  git add . (adicionar alteração)
+  git commit -m "Descrição" (fazer comentário)
+  git push origin nome-da-branch (subir atualização para a branch)
+  ```
+
+  ### 4. apenas para testar o push na master
+
+
+  teste
+  teste
+  teste
+  teste
+
+  teste
+  teste
+
+
+
+  teste
+  teste
+  teste
+
+
+  asdasdsadasdasdasd
+  asdasdadasdasdasdasdsad
+  asdadasdasd
+  
+>>>>>>> 44676572520f201608b269ef4bb374b0252eb6a1
