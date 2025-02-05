@@ -50,50 +50,50 @@ O arquivo workflow_cypress.yaml se econtra dentro da pasta .github/workflows
 
 #### 4.1 Configuração inicial
  ![alt text](image_readme/image-7.png)       
-• `name` Define o nome do workflow, neste caso, "Continuous Integration". Esse nome será exibido no painel de ações do Github
+• `name` Define o nome do workflow, neste caso, "Continuous Integration". Esse nome será exibido no painel de ações do Github       
 
 
 #### 4.2 Disparo do workflow
  ![alt text](image_readme/image-8.png)       
-• `on`: Define os eventos que acionam esse workflow.
-• `push`: Este workflow será executado sempre que houver um push (envio de alterações) nos branches especificados.
-• `branches`: Lista os branches onde o workflow será disparado. Aqui, são os branches homologa e master.
+• `on`: Define os eventos que acionam esse workflow.         
+• `push`: Este workflow será executado sempre que houver um push (envio de alterações) nos branches especificados.         
+• `branches`: Lista os branches onde o workflow será disparado. Aqui, são os branches homologa e master.          
 
 #### 4.3 Definição de Jobs
 ![alt text](image_readme/image-9.png)        
-• `jobs`: Define as tarefas (jobs) que serão executadas no workflow.
-• `Continuous-integration`: Nome do job.
-• `runs-on: ubuntu-latest`: Define o sistema operacional no qual o job será executado. Neste caso, a última versão do Ubuntu disponível.
+• `jobs`: Define as tarefas (jobs) que serão executadas no workflow.      
+• `Continuous-integration`: Nome do job.     
+• `runs-on: ubuntu-latest`: Define o sistema operacional no qual o job será executado. Neste caso, a última versão do Ubuntu disponível.        
 
 #### 4.4 Passos do Job
 ![alt text](image_readme/image-10.png)           
-• `steps`: Lista os passos do job.
-• `uses: actions/checkout@v3`: Faz o checkout do repositório. Isso significa que o código-fonte do repositório será baixado para a máquina de execução.
+• `steps`: Lista os passos do job.        
+• `uses: actions/checkout@v3`: Faz o checkout do repositório. Isso significa que o código-fonte do repositório será baixado para a máquina de execução.         
 
 #### 4.5 Configuração do Node.js
 ![alt text](image_readme/image-11.png)        
-• `name: Set up Node.js`: Um passo com o nome "Set up Node.js".
-• `uses: actions/setup-node@v2`: Usa a ação oficial do GitHub para configurar o Node.js.
-• `with`: Define as configurações adicionais.
-• `node-version: 20`: Especifica a versão do Node.js a ser usada (neste caso, a versão 20).
+• `name: Set up Node.js`: Um passo com o nome "Set up Node.js".       
+• `uses: actions/setup-node@v2`: Usa a ação oficial do GitHub para configurar o Node.js.      
+• `with`: Define as configurações adicionais.      
+• `node-version: 20`: Especifica a versão do Node.js a ser usada (neste caso, a versão 20).       
 
 #### 4.6 Instalação das dependências
 ![alt text](image_readme/image-12.png)          
-• `name: Install dependencies`: Um passo com o nome "Install dependencies".
-• `run: npm install`: Executa o comando npm install para instalar as dependências do projeto listadas no arquivo package.json.
+• `name: Install dependencies`: Um passo com o nome "Install dependencies".       
+• `run: npm install`: Executa o comando npm install para instalar as dependências do projeto listadas no arquivo package.json.       
 
 #### 4.7 Configuração de permissões para o Cypress
 ![alt text](image_readme/image-13.png)         
-• `name: Set permissions for Cypress`: Um passo com o nome "Set permissions for Cypress".
-• `run`: Executa o comando chmod +x para dar permissões de execução ao binário do Cypress na pasta node_modules.
-• `|| true`: Garante que o workflow não falhe caso o comando retorne um erro (por exemplo, se o arquivo já tiver as permissões corretas).
+• `name: Set permissions for Cypress`: Um passo com o nome "Set permissions for Cypress".      
+• `run`: Executa o comando chmod +x para dar permissões de execução ao binário do Cypress na pasta node_modules.       
+• `|| true`: Garante que o workflow não falhe caso o comando retorne um erro (por exemplo, se o arquivo já tiver as permissões corretas).        
 
 #### 4.8 Instalação do binário do Cypress
 ![alt text](image_readme/image-14.png)       
-• `name: Install Cypress binary`: Um passo com o nome "Install Cypress binary".
-• `run: npx cypress install`: Executa o comando npx cypress install para baixar e instalar o binário necessário para rodar os testes do Cypress.
+• `name: Install Cypress binary`: Um passo com o nome "Install Cypress binary".        
+• `run: npx cypress install`: Executa o comando npx cypress install para baixar e instalar o binário necessário para rodar os testes do Cypress.        
 
 #### 4.9 Execução dos testes do Cypress
 ![alt text](image_readme/image-15.png)       
-• `name: Run Cypress tests`: Um passo com o nome "Run Cypress tests".
-• `run: npx cypress run`: Executa o comando npx cypress run, que inicia a execução dos testes configurados no Cypress.
+• `name: Run Cypress tests`: Um passo com o nome "Run Cypress tests".           
+• `run: npx cypress run`: Executa o comando npx cypress run, que inicia a execução dos testes configurados no Cypress.          
