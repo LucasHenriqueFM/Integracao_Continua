@@ -9,14 +9,14 @@ When('digitar o numero 5 na primeira caixa', () =>{
   cy.get('#number1').type('5')
 });
 
-And('digitar 10 na segunda caixa', () =>{
-  cy.get('#number2').type('10')
+And('digitar 11 na segunda caixa', () =>{
+  cy.get('#number2').type('11')
 });
 
 And('clicar no botão Calcular', () =>{
   cy.get('#calculate').click()
 });
 
-Then('deve mostrar que o resultado é 15', () => {
-  cy.get('#answer').should('have.text', '15')
+Then('deve mostrar que o resultado é 16', () => {
+  cy.get('#answer').should('have.text', '16')
 })
